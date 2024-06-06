@@ -26,12 +26,30 @@ export const Navbar = () => {
           >
             DC
           </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              `nav-item nav-link ${isActive ? "active" : ""}`
+            }
+            to="/hero"
+          >
+            HeroPage
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              `nav-item nav-link ${isActive ? "active" : ""}`
+            }
+            to="/search"
+          >
+            SearchPage
+          </NavLink>
         </div>
       </div>
 
       <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex justify-content-end">
         <ul className="navbar-nav ml-auto">
-          <span className="nav-item nav-Link text-primary align-self-center">Oliver</span>
+          <span className="nav-item nav-Link text-primary align-self-center">
+            Oliver
+          </span>
           <button className="nav-item nav-link btn">Logout</button>
         </ul>
       </div>
