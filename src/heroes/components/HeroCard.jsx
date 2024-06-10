@@ -32,7 +32,7 @@ export const HeroCard = ({
               <CharactersByHero alter_ego={alter_ego} characters={characters} />
 
               <p className="card-text">
-                <small className="text-mute">{first_appearance}</small>
+                <small className="text-muted">{first_appearance}</small>
               </p>
 
               <Link to={`/hero/${id}`}>More Information...</Link>
